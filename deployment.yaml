@@ -90,7 +90,7 @@ spec:
       containers:
       - name: controller
         image: torchbox/k8s-database-controller:v1.0.0-alpha6
-        args:
+        command:
         - /database-controller
         - --config=/config/config.yaml
         volumeMounts:
